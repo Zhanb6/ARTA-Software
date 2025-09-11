@@ -12,3 +12,11 @@ GROUP BY c.CourseID
 ORDER BY avg_score DESC
 LIMIT 20;
 -- average score from grades
+
+select s.StudentID, s.FirstName, s.LastName, s.GPA, COUNT(e.CourseID) as courses_taken
+from students s
+left join enrollments e on s.StudentID = e.StudentID
+GROUP BY s.StudentID, s.FirstName, s.LastName, s.GPA
+ORDER BY s.GPA DESC
+LIMIT 20;
+-- top students by GPA with + course count
