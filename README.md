@@ -1,7 +1,7 @@
-# ARTA-Software — Campus Analytics
+# ARTA-Software — Business Analytics
 
 ## About the company & project
-ARTA-Software — внутренний аналитический отдел. Проект: **Campus Analytics** — анализ данных колледжа (студенты, курсы, зачисления, посещаемость, оценки, отзывы) в MySQL с возможностью JOIN/AGG запросов.
+ARTA-Software — внутренний аналитический отдел. Проект: **College Analytics** — анализ данных колледжа (студенты, курсы, зачисления, посещаемость, оценки, отзывы) в MySQL с возможностью JOIN/AGG запросов.
 
 ## Dataset & schema
 База -> `college_db` содержит таблицы:
@@ -12,10 +12,7 @@ ARTA-Software — внутренний аналитический отдел. П
 - `grades` (1000)
 - `feedback` (500)
 
-## Launch (local)
-1. Create DB:
-   ```sql
-   CREATE DATABASE college_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
 ## Launch
 1.create DB
 ```sql
