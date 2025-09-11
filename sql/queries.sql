@@ -4,3 +4,11 @@ JOIN students s ON s.StudentID = e.StudentID
 JOIN courses  c ON c.CourseID  = e.CourseID
 LIMIT 20;
 -- simple JOIN with named courses
+
+SELECT c.CourseName, ROUND(AVG(g.Score)2,) AS avg_score, count(*) as n
+from grages g
+join courses c on c.COURSEID = g.Course.ID
+GROUP BY c.CourseID
+ORDER BY avg_score DESC
+LIMIT 20;
+-- average score from grades
