@@ -1,14 +1,34 @@
-##
-# ARTA-Software
-I am working as a Business Analytics in ARTA-Software and our project is based with college students and also MID 
+# ARTA-Software — Campus Analytics
 
+## About the company & project
+ARTA-Software — внутренний аналитический отдел. Проект: **Campus Analytics** — анализ данных колледжа (студенты, курсы, зачисления, посещаемость, оценки, отзывы) в MySQL с возможностью JOIN/AGG запросов.
+
+## Dataset & schema
+База -> `college_db` содержит таблицы:
+- `students` (500) 
+- `courses` (50)
+- `enrollments` (500)
+- `attendance` (1000)
+- `grades` (1000)
+- `feedback` (500)
+
+## Launch (local)
+1. Create DB:
+   ```sql
+   CREATE DATABASE college_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ## Launch
 1.create DB
 ```sql
 CREATE DATABASE college_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-Workbench -> Run
+2.Run schema (Workbench → open sql/schema.sql → Run).
+3.Import CSV (Workbench → Table Data Import Wizard) в существующие таблицы
 Import CSV <button> Table Data Import Wizard
 ``` 
+## Tools (used)
+- `VsCode`
+- `MySQL`
+- `MySQL Workbench`
+ 
 
 ## Screenshots
 <img width="1028" height="676" alt="image" src="https://github.com/user-attachments/assets/63199c88-e09f-45f7-a620-62c41c7c0704" />
